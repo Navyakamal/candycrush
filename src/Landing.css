@@ -1,0 +1,65 @@
+.landing-container{
+    background-image: url('https://i.postimg.cc/gjndr2CN/48-487341-candy-crush-saga-wiki-candy-crush-saga-background.jpg');
+    height: 100vh;
+    background-size: cover;
+  }
+  
+  @keyframes swing-left {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-20deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes swing-right {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(20deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .logo {
+    
+    transform-origin: center top;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 490px;
+    height: 500px;
+    width: 550px;
+  }
+  
+  .logo.swing-left {
+    animation-name: swing-left;
+  }
+  
+  .logo.swing-right {
+    animation-name: swing-right;
+  }
+  .play{
+    text-align: center;
+    margin-left: 680px;
+    height: 60px;
+    width: 200px;
+    font-size: 45px;
+    background-color: palevioletred;
+    color: white;
+    border-radius: 20px;
+    border: 4px solid white;
+   
+  
+  }
+  .play:hover{
+    transform: scale(1.1);
+  
+  }
